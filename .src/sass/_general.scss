@@ -1,0 +1,291 @@
+h1, h2 {
+	margin: 0 auto;
+	max-width: 70vw;
+	padding: 0;
+	line-height: 1;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 12vw;
+	//font-family: born;
+}
+
+h2 {
+	font-size: 8vw;
+	margin-bottom: .3em;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		height: .7vmin;
+		width: 12vw;
+		bottom: -.08em;
+		left: .03em;
+		background-color: $foreground;
+		border-radius: .35vmin;
+	}
+}
+
+.tagline, .big {
+	font-size: 4vw;
+}
+
+.slides {
+	list-style: none;
+	font-weight: normal;
+}
+
+.very-big {
+	font-size: 7vw;
+}
+
+.tagline {
+	margin-top: 0;
+}
+
+.twitter {
+	text-decoration: none;
+}
+
+.sketch-w25 section {
+	background-size: 25vw auto;
+	background-repeat: no-repeat;
+}
+
+.sketch-w30 section {
+	background-size: 30vw auto;
+	background-repeat: no-repeat;
+}
+
+.sketch-w40 section {
+	background-size: 40vmax auto;
+	background-repeat: no-repeat;
+}
+
+.sketch-hw40 section {
+	background-size: 40vmax auto;
+	background-repeat: no-repeat;
+}
+
+p:first-child,
+p:last-child {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+._3d {
+	perspective: 600px;
+	perspective-origin: 50% 50%;
+	transform-style: preserve-3d;
+}
+
+/* This is the element on which to apply transformation */
+._3d > * {
+	transform-style: preserve-3d;
+}
+
+.visible-rotate {
+	position: relative;
+	opacity: 1;
+	transform: rotateX(0deg);
+	animation: flip-in .6s;
+}
+
+.hidden-rotate {
+	transform: rotateX(180deg);
+}
+
+/* `colors */
+.dark {
+	background-color: $background;
+	color: $foreground;
+}
+
+.darkgrey {
+	background-color: $darkgrey !important;
+	color: $foreground !important;
+}
+
+.light {
+	background-color: #e3e0e3;
+	color: $background;
+}
+
+.petrol {
+	background-color: $petrol !important;
+}
+
+.violet {
+	background-color: $violet !important;
+}
+
+.white {
+	background-color: $foreground !important;
+}
+.mint {
+	background-color: $mint !important;
+}
+
+.white, .mint {
+	color: $background !important;
+
+	h2::after {
+		background-color: $background;
+	}
+}
+
+body {
+	overflow: hidden;
+	background: $background;
+	color: $foreground;
+	padding: 0;
+	margin: 0;
+	font-family: 'neighbourhood', sans-serif;
+	font-size: 3vmin;
+	line-height: 1.5;
+}
+
+a {
+	color: $foreground;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.slides {
+	display: block;
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+
+	> li {
+		display: none;
+		list-style: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 10% 15%;
+		color: $foreground;
+		background-color: $background;
+		background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.4) 100%);
+
+		&.active::before {
+			display: none;
+		}
+
+		> section::before {
+			content: '';
+			display: block;
+			position: absolute;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			z-index: -1;
+		}
+
+		> * {
+			display: table-cell;
+			text-align: left;
+		}
+
+		&.middle > * {
+			vertical-align: middle;
+		}
+
+		&.active {
+			display: table;
+		}
+
+		&.step-0 li,
+		&.step-1 li,
+		&.step-2 li,
+		&.step-3 li,
+		&.step-4 li,
+		&.step-5 li,
+		&.step-6 li,
+		&.step-7 li,
+		&.step-8 li,
+		&.step-9 li {
+			transition: opacity $transition ease-in-out;
+		}
+
+		&.step-0 li,
+		&.step-1 li:nth-of-type(1n+2),
+		&.step-2 li:nth-of-type(1n+3),
+		&.step-3 li:nth-of-type(1n+4),
+		&.step-4 li:nth-of-type(1n+5),
+		&.step-5 li:nth-of-type(1n+6),
+		&.step-6 li:nth-of-type(1n+7),
+		&.step-7 li:nth-of-type(1n+8),
+		&.step-8 li:nth-of-type(1n+9),
+		&.step-9 li:nth-of-type(1n+10) {
+			opacity: 0;
+		}
+	}
+}
+
+footer {
+	position: relative;
+	margin-top: 4em;
+	padding-top: .8em;
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: .5vmin;
+		width: 12vw;
+		top: 0;
+		background-color: $foreground;
+		border-radius: .25vmin;
+	}
+}
+
+.cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.center {
+	text-align: center;
+}
+
+.ref {
+	position: absolute;
+	bottom: 10%;
+	opacity: .3;
+}
+
+#video {
+	mix-blend-mode: multiply;
+	filter: grayscale(100%);
+}
+
+video {
+	min-width: 100vw;
+	min-height: 100vh;
+}

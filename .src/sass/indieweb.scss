@@ -1,0 +1,20 @@
+$foreground: #fff;
+$background: #2b242b;
+
+$petrol: #0f7595;
+$darkred: #d34;
+$iwcred: #ED1C24;
+$iwcorange: #FBB03B;
+$yellow: #ffff00;
+$blue: #00f;
+$mint: #c9ffcc;
+$violet: #f24056;
+$darkgrey: #4d404d;
+
+$transition: 200ms;
+
+@import "fonts";
+@import "general";
+@import "effects";
+@import "slides";
+@import "animation";
