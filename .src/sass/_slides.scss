@@ -165,54 +165,40 @@
 	}
 }
 
-
-
-#bwakila .▣ {
-	display: none;
+#i-dont-care {
+	background-image: radial-gradient(ellipse farthest-corner at 35% 50%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
 }
 
-#bwakila.active .▣ {
-	display: block;
-	-webkit-animation: zoomin 250ms cubic-bezier(.2, .3, .25, .9) forwards;
+#indiewebcamp {
+	.iwc {
+		background-color: #fff;
+		padding: 1em;
+		width: 60%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
-#bwakila div {
-	font-family: aachen;
-	font-weight: normal;
-	font-size: 100px;
-	color: black;
-	text-transform: uppercase;
-	margin-top: 90px;
+#independence {
+	section {
+		background-image: url('/img/sketches/07_federation.png');
+		background-position: center;
+	}
 }
 
-#bwakila div.▣::after {
-	display: block;
-	position: absolute;
-	z-index: 1;
-	top: -15px;
-	left: 0px;
-	width: 100%;
-	font-family: aachen;
-	font-weight: normal;
-	text-align: center;
-	color: #fff;
-	content: 'Bwakila!';
+#syndication {
+	section {
+		background-image: url('/img/sketches/08_syndication.png');
+		background-position: center left;
+		padding-left: 50%;
+	}
 }
 
-#bwakila div p {
-	-webkit-filter: brightness(0%);
-}
+#principles {
 
-#bwakila div p img {
-	display: block;
-	z-index: 0;
-	position: relative;
-	width: 600px;
-	margin: -50px auto 0;
-}
-
-#alert {
-	background-color: #d34;
 }
 
 #alert img {
@@ -270,19 +256,6 @@
 
 #screenshot.active img {
 	-webkit-animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
-}
-
-blockquote {
-	line-height: 1.3em;
-	background: #d34;
-	font-size: 0.9em;
-	padding: 2em;
-	margin: 0 8vw;
-	box-shadow: 10px 0 100px rgba(0, 0, 0, 0.5);
-}
-
-.active blockquote {
-	-webkit-animation: fall-away 500ms ease-in reverse forwards;
 }
 
 #art {

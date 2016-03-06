@@ -51,22 +51,22 @@ h2 {
 
 .sketch-w25 section {
 	background-size: 25vw auto;
-	background-repeat: no-repeat;
 }
 
 .sketch-w30 section {
 	background-size: 30vw auto;
-	background-repeat: no-repeat;
 }
 
 .sketch-w40 section {
 	background-size: 40vmax auto;
-	background-repeat: no-repeat;
 }
 
 .sketch-hw40 section {
 	background-size: 40vmax auto;
-	background-repeat: no-repeat;
+}
+
+.sketch-contain section {
+	background-size: contain;
 }
 
 p:first-child,
@@ -140,6 +140,10 @@ p:last-child {
 	}
 }
 
+.orange {
+	background-color: $iwcorange !important;
+}
+
 body {
 	overflow: hidden;
 	background: $background;
@@ -173,7 +177,8 @@ ul {
 	overflow: hidden;
 
 	> li {
-		display: none;
+		//display: none;
+		display: table;
 		list-style: none;
 		position: absolute;
 		width: 100%;
@@ -182,6 +187,8 @@ ul {
 		color: $foreground;
 		background-color: $background;
 		background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.4) 100%);
+		opacity: 0;
+		transition: opacity $transition ease;
 
 		&.active::before {
 			display: none;
@@ -205,6 +212,7 @@ ul {
 		> * {
 			display: table-cell;
 			text-align: left;
+			background-repeat: no-repeat;
 		}
 
 		&.middle > * {
@@ -212,6 +220,7 @@ ul {
 		}
 
 		&.active {
+			opacity: 1;
 			display: table;
 		}
 
@@ -288,4 +297,21 @@ footer {
 video {
 	min-width: 100vw;
 	min-height: 100vh;
+}
+
+
+blockquote {
+	p {
+		line-height: 1.2;
+		font-size: 5vw;
+	}
+
+	b {
+		font-weight: normal;
+		color: $iwcorange;
+	}
+}
+
+.active blockquote {
+	-webkit-animation: fall-away 500ms ease-in reverse forwards;
 }

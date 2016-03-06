@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'born';
   src: url("/css/fonts/born.eot");
@@ -54,20 +53,19 @@ h2 {
   text-decoration: none; }
 
 .sketch-w25 section {
-  background-size: 25vw auto;
-  background-repeat: no-repeat; }
+  background-size: 25vw auto; }
 
 .sketch-w30 section {
-  background-size: 30vw auto;
-  background-repeat: no-repeat; }
+  background-size: 30vw auto; }
 
 .sketch-w40 section {
-  background-size: 40vmax auto;
-  background-repeat: no-repeat; }
+  background-size: 40vmax auto; }
 
 .sketch-hw40 section {
-  background-size: 40vmax auto;
-  background-repeat: no-repeat; }
+  background-size: 40vmax auto; }
+
+.sketch-contain section {
+  background-size: contain; }
 
 p:first-child,
 p:last-child {
@@ -134,6 +132,9 @@ p:last-child {
   .white h2::after, .mint h2::after {
     background-color: #2b242b; }
 
+.orange {
+  background-color: #FBB03B !important; }
+
 body {
   overflow: hidden;
   background: #2b242b;
@@ -163,7 +164,7 @@ ul {
   padding: 0;
   overflow: hidden; }
   .slides > li {
-    display: none;
+    display: table;
     list-style: none;
     position: absolute;
     width: 100%;
@@ -171,7 +172,9 @@ ul {
     padding: 10% 15%;
     color: #fff;
     background-color: #2b242b;
-    background-image: radial-gradient(ellipse farthest-corner, transparent 0, rgba(0, 0, 0, 0.4) 100%); }
+    background-image: radial-gradient(ellipse farthest-corner, transparent 0, rgba(0, 0, 0, 0.4) 100%);
+    opacity: 0;
+    transition: opacity 200ms ease; }
     .slides > li.active::before {
       display: none; }
     .slides > li > section::before {
@@ -189,10 +192,12 @@ ul {
       z-index: -1; }
     .slides > li > * {
       display: table-cell;
-      text-align: left; }
+      text-align: left;
+      background-repeat: no-repeat; }
     .slides > li.middle > * {
       vertical-align: middle; }
     .slides > li.active {
+      opacity: 1;
       display: table; }
     .slides > li.step-0 li,
     .slides > li.step-1 li,
@@ -256,6 +261,17 @@ footer {
 video {
   min-width: 100vw;
   min-height: 100vh; }
+
+blockquote p {
+  line-height: 1.2;
+  font-size: 5vw; }
+
+blockquote b {
+  font-weight: normal;
+  color: #FBB03B; }
+
+.active blockquote {
+  -webkit-animation: fall-away 500ms ease-in reverse forwards; }
 
 /* `effects */
 .fadein .x {
@@ -429,46 +445,25 @@ video {
   -webkit-animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards;
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
-#bwakila .▣ {
-  display: none; }
+#i-dont-care {
+  background-image: radial-gradient(ellipse farthest-corner at 35% 50%, transparent 0, black 100%); }
 
-#bwakila.active .▣ {
-  display: block;
-  -webkit-animation: zoomin 250ms cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
+#indiewebcamp .iwc {
+  background-color: #fff;
+  padding: 1em;
+  width: 60%; }
+  #indiewebcamp .iwc img {
+    width: 100%;
+    height: auto; }
 
-#bwakila div {
-  font-family: aachen;
-  font-weight: normal;
-  font-size: 100px;
-  color: black;
-  text-transform: uppercase;
-  margin-top: 90px; }
+#independence section {
+  background-image: url("/img/sketches/07_federation.png");
+  background-position: center; }
 
-#bwakila div.▣::after {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: -15px;
-  left: 0px;
-  width: 100%;
-  font-family: aachen;
-  font-weight: normal;
-  text-align: center;
-  color: #fff;
-  content: 'Bwakila!'; }
-
-#bwakila div p {
-  -webkit-filter: brightness(0%); }
-
-#bwakila div p img {
-  display: block;
-  z-index: 0;
-  position: relative;
-  width: 600px;
-  margin: -50px auto 0; }
-
-#alert {
-  background-color: #d34; }
+#syndication section {
+  background-image: url("/img/sketches/08_syndication.png");
+  background-position: center left;
+  padding-left: 50%; }
 
 #alert img {
   display: none; }
@@ -514,17 +509,6 @@ video {
 
 #screenshot.active img {
   -webkit-animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
-
-blockquote {
-  line-height: 1.3em;
-  background: #d34;
-  font-size: 0.9em;
-  padding: 2em;
-  margin: 0 8vw;
-  box-shadow: 10px 0 100px rgba(0, 0, 0, 0.5); }
-
-.active blockquote {
-  -webkit-animation: fall-away 500ms ease-in reverse forwards; }
 
 #art {
   background-color: #fff; }
