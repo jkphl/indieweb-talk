@@ -104,6 +104,17 @@
 	}
 }
 
+#zuckerberg {
+	.cover {
+		background-image: url('/img/zuckerberg.jpg');
+		background-size: cover;
+	}
+
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
+}
+
 #socialnetworks{
 	section {
 		background-image: url('/img/sketches/03_social-networks.png');
@@ -201,209 +212,212 @@
 
 }
 
-#alert img {
-	display: none;
+#tom {
+	section {
+		background-image: url('/img/sketches/tom.png');
+		background-position: center left;
+		padding-left: 50%;
+	}
 }
 
-#alert.active img {
-	display: inline-block;
-	height: 80vh;
-	box-shadow: 10px 0 100px rgba(0, 0, 0, 0.5);
-	-webkit-animation: fall-away 500ms ease-in reverse forwards;
+.with-tom {
+	section {
+		background-image: url('/img/sketches/tom.png');
+		background-position: center left;
+		padding-left: 50%;
+	}
 }
 
-#end {
-	background-color: #d34;
+#indiemark {
+	section {
+		background-image: url('/img/indiemark/intro.svg');
+		background-position: center right;
+		background-size: 40vw auto;
+	}
 }
 
-#ballerina {
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#indieauth {
+	section {
+		background-image: url('/img/logos/indieauth.svg');
+		background-position: 25% center;
+		background-size: 22% auto;
+		padding-left: 50%;
+	}
 }
 
-#ballerina .cover {
-	background-image: url(ballerina.gif);
-	opacity: 0.6;
+#relme {
+	.cover {
+		background-image: url('/img/screenshots/relmeauth.png');
+		background-size: 74% auto;
+		background-position: 50% 60%;
+	}
 }
 
-#ballerina2 .cover {
-	background-image: url(ballerina.gif);
-	opacity: 0.6;
+#login {
+	.cover {
+		background-image: url('/img/screenshots/indiewebcamp.com-login.png');
+		background-size: auto;
+	}
+
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#tunnel_vision {
-	text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+#indieauth-scan {
+	background: transparent url('/img/screenshots/indieauth-noise.jpg') center repeat;
+
+	.cover {
+		background-image: url('/img/screenshots/indieauth-scan.png');
+		background-size: auto;
+	}
+
+	&.active .cover {
+		animation: pushin-pan 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#tunnel_vision .cover {
-	background-image: url(tunnel-vision.gif);
-	opacity: 0.7;
-	mix-blend-mode: multiply;
+#indieauth-twitter {
+	.cover {
+		background-image: url('/img/screenshots/indieauth-twitter.png');
+		background-size: auto;
+	}
+
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#stephen {
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#indieauth-delegation {
+	.cover {
+		background-image: url('/img/screenshots/indieauth-login.svg');
+		background-size: contain;
+	}
+
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#stephen .cover {
-	background-image: url(wiltshire.jpg);
-	opacity: 0.7;
+#building-blocks {
+	ul {
+		display: table;
+		margin: 3em auto 0 auto;
+	}
+	li {
+		display: table-cell;
+		width: 50%;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0 2em;
+	}
+	img {
+		height: 30vh;
+		width: auto;
+	}
+
+	.microformats figcaption {
+		padding-right: 1em;
+	}
 }
 
-#screenshot img {
-	height: 90vh;
-	box-shadow: 10px 0 100px rgba(0, 0, 0, 0.5);
+#permalinks {
+	.cover {
+		background-image: url('/img/screenshot-article.jpg');
+		background-size: 70% auto;
+		background-position: 50% 40vh;
+	}
+
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#screenshot.active img {
-	-webkit-animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+#h-entry {
+	.cover {
+		background-image: url('/img/screenshots/hentry.png');
+		background-size: 74% auto;
+		background-position: 50% 65%;
+	}
 }
 
-#art {
-	background-color: #fff;
+#robots {
+	.cover {
+		background-image: url('/img/eve.png');
+		background-size: 30% auto;
+		background-position: 70% 60%;
+	}
+
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#art .cover {
-	background-image: url(art.jpg);
-	background-size: 105% auto;
+#curl {
+	background-image: radial-gradient(ellipse farthest-corner at 35% 50%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
 }
 
-#art.active .cover {
-	-webkit-animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+#google-site-search {
+	.cover {
+		background-image: url('/img/screenshots/site-search-via-google.png');
+		background-size: auto;
+	}
+
+	&.active .cover {
+		animation: pushin-pan 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }
 
-#art2 .cover {
-	background-image: url(art2.jpg);
+#indiemark-l1-4 {
+	section {
+		background-image: url('/img/indiemark/level1.svg');
+		background-position: center right;
+		background-size: 40vw auto;
+	}
 }
 
-#art2.active .cover {
-	-webkit-animation: zoomout 20s cubic-bezier(.2, .3, .25, .9) forwards;
+#h-card {
+	.cover {
+		background-image: url('/img/screenshots/hcard.png');
+		background-size: 74% auto;
+		background-position: 50% 65%;
+	}
 }
 
-#eye .cover {
-	background-image: url(eye.gif);
+#posse, #pesos {
+	section {
+		background-size: 25vw auto;
+		background-position: bottom left;
+	}
+
+	.logos {
+		//position: absolute;
+		//bottom: 10%;
+	}
+
+	img {
+		vertical-align: middle;
+		height: auto;
+		width: 8vw;
+		margin-right: 3vw;
+	}
 }
 
-#moores_law .cover {
-	background-image: url(gordon.png);
-	background-position: center bottom;
-	opacity: 0.7;
-	mix-blend-mode: multiply;
+#indiemark-l2-3 {
+	section {
+		background-image: url('/img/indiemark/level2.svg');
+		background-position: center right;
+		background-size: 40vw auto;
+	}
 }
 
-#moores_law.active .cover {
-	-webkit-animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
-}
+#jump {
+	.cover {
+		background-image: url('/img/iwcdus2015.jpg');
+		background-size: cover;
+	}
 
-#notification .cover {
-	opacity: 0.4;
-}
-
-#time_sharing .cover {
-	background-image: url(time-sharing.jpg);
-	opacity: 0.4;
-}
-
-#time_sharing {
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#always_on .cover {
-	background-image: url(always-on.jpg);
-	opacity: 0.4;
-}
-
-#amazon {
-	background: #fff;
-}
-
-#spotify {
-	background: #80b719;
-}
-
-#netflix {
-	background: #dc0505;
-}
-
-#uber img,
-#amazon img,
-#spotify img,
-#netflix img {
-	width: 30vw;
-}
-
-#uber.active img,
-#amazon.active img,
-#spotify.active img,
-#netflix.active img {
-	-webkit-animation: pushin 10s cubic-bezier(.2, .3, .25, .9) forwards;
-}
-
-#uber img {
-	width: 20vw;
-}
-
-#management {
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#management .cover {
-	background-image: url(audience.jpg);
-	-webkit-animation: pushin 30s cubic-bezier(.2, .3, .25, .9) forwards;
-	opacity: 0.9;
-	mix-blend-mode: multiply;
-}
-
-#os img {
-	width: 10vw;
-}
-
-#platforms img {
-	width: 10vw;
-}
-
-#privacy img {
-	height: 40vh;
-	-webkit-filter: contrast(0%) brightness(200%);
-	vertical-align: middle;
-}
-
-#privacy img.user {
-	height: 20vh;
-	margin-left: 2em;
-}
-
-#personal .cover {
-	background-image: url(clown.jpg);
-	opacity: 0.9;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	mix-blend-mode: multiply;
-}
-
-#telephones .cover {
-	background-image: url(telephones.jpg);
-	opacity: 0.4;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#bikes .cover {
-	background-image: url(steve.jpg);
-	opacity: 0.5;
-}
-
-#line {
-	position: absolute;
-	top: 60vh;
-	width: 100%;
-	height: 5px;
-	background: #0378ea;
-}
-
-#line::before {
-	content: 'Attention';
-	position: relative;
-	top: -1.6em;
-	line-height: 1.6em;
-	background: #0378ea;
-	padding: 0 0.5em;
-	display: inline-block;
+	&.active .cover {
+		animation: pushin 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	}
 }

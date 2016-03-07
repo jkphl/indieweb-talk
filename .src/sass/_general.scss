@@ -1,3 +1,8 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
 h1, h2 {
 	margin: 0 auto;
 	max-width: 70vw;
@@ -15,6 +20,7 @@ h2 {
 	font-size: 8vw;
 	margin-bottom: .3em;
 	position: relative;
+	z-index: 99;
 
 	&::after {
 		content: '';
@@ -45,7 +51,7 @@ h2 {
 	margin-top: 0;
 }
 
-.twitter {
+footer a {
 	text-decoration: none;
 }
 
@@ -125,15 +131,26 @@ p:last-child {
 	background-color: $violet !important;
 }
 
+.screenshot {
+	background-color: $screenshot !important;
+}
+
 .white {
 	background-color: $foreground !important;
 }
+
 .mint {
 	background-color: $mint !important;
 }
 
-.white, .mint {
-	color: $background !important;
+.lightblue {
+	background-color: $lightblue !important;
+}
+
+.white, .mint, .lightblue {
+	*, a {
+		color: $background !important;
+	}
 
 	h2::after {
 		background-color: $background;
@@ -190,6 +207,10 @@ ul {
 		opacity: 0;
 		transition: opacity $transition ease;
 
+		&.no-gradient {
+			background-image: none;
+		}
+
 		&.active::before {
 			display: none;
 		}
@@ -219,34 +240,38 @@ ul {
 			vertical-align: middle;
 		}
 
+		&.bottom > * {
+			vertical-align: bottom;
+		}
+
 		&.active {
 			opacity: 1;
 			display: table;
 		}
 
-		&.step-0 li,
-		&.step-1 li,
-		&.step-2 li,
-		&.step-3 li,
-		&.step-4 li,
-		&.step-5 li,
-		&.step-6 li,
-		&.step-7 li,
-		&.step-8 li,
-		&.step-9 li {
+		&.step-0 ul:not(.static) > li,
+		&.step-1 ul:not(.static) > li,
+		&.step-2 ul:not(.static) > li,
+		&.step-3 ul:not(.static) > li,
+		&.step-4 ul:not(.static) > li,
+		&.step-5 ul:not(.static) > li,
+		&.step-6 ul:not(.static) > li,
+		&.step-7 ul:not(.static) > li,
+		&.step-8 ul:not(.static) > li,
+		&.step-9 ul:not(.static) > li {
 			transition: opacity $transition ease-in-out;
 		}
 
-		&.step-0 li,
-		&.step-1 li:nth-of-type(1n+2),
-		&.step-2 li:nth-of-type(1n+3),
-		&.step-3 li:nth-of-type(1n+4),
-		&.step-4 li:nth-of-type(1n+5),
-		&.step-5 li:nth-of-type(1n+6),
-		&.step-6 li:nth-of-type(1n+7),
-		&.step-7 li:nth-of-type(1n+8),
-		&.step-8 li:nth-of-type(1n+9),
-		&.step-9 li:nth-of-type(1n+10) {
+		&.step-0 ul:not(.static) > li,
+		&.step-1 ul:not(.static) > li:nth-of-type(1n+2),
+		&.step-2 ul:not(.static) > li:nth-of-type(1n+3),
+		&.step-3 ul:not(.static) > li:nth-of-type(1n+4),
+		&.step-4 ul:not(.static) > li:nth-of-type(1n+5),
+		&.step-5 ul:not(.static) > li:nth-of-type(1n+6),
+		&.step-6 ul:not(.static) > li:nth-of-type(1n+7),
+		&.step-7 ul:not(.static) > li:nth-of-type(1n+8),
+		&.step-8 ul:not(.static) > li:nth-of-type(1n+9),
+		&.step-9 ul:not(.static) > li:nth-of-type(1n+10) {
 			opacity: 0;
 		}
 	}
@@ -279,6 +304,12 @@ footer {
 	background-position: center center;
 }
 
+.check {
+	background: transparent url('/img/checkmark.svg') left center no-repeat;
+	padding-left: 1.5em;
+	background-size: auto 60%;
+}
+
 .center {
 	text-align: center;
 }
@@ -286,7 +317,13 @@ footer {
 .ref {
 	position: absolute;
 	bottom: 10%;
+	left: 15%;
 	opacity: .3;
+}
+
+figure {
+	padding: 0;
+	margin: 0;
 }
 
 #video {
@@ -298,7 +335,6 @@ video {
 	min-width: 100vw;
 	min-height: 100vh;
 }
-
 
 blockquote {
 	p {
@@ -312,6 +348,9 @@ blockquote {
 	}
 }
 
-.active blockquote {
-	-webkit-animation: fall-away 500ms ease-in reverse forwards;
+.active {
+	&.screenshot .cover,
+	blockquote {
+		animation: fall-away 500ms ease-in reverse forwards;
+	}
 }

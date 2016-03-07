@@ -55,7 +55,7 @@
         var steps = $next.attr('data-steps');
         if (steps && steps.length) {
             currentSteps = steps.split(' ');
-        } else if (list = $next.find('ul li').length) {
+        } else if (list = $next.find('ul:not(.static) li').length) {
             currentSteps = [];
             for (var s = 0; s <= list; ++s) {
                 currentSteps.push('step-' + s);
