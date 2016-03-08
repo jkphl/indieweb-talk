@@ -100,8 +100,15 @@
             return index;
         } else {
             var new_index = index + 1;
-            return new_index <= max_index ? new_index : cycle ? min_index : max_index;
+            new_index = new_index <= max_index ? new_index : cycle ? min_index : max_index;
+            tint(new_index);
+            return new_index;
         }
+    }
+
+    function tint(index) {
+        //var bgcolor = $slides.eq(index).css('background-color');
+        //$('body').css('background-color', bgcolor);
     }
 
     function step($slide, step) {

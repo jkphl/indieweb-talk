@@ -63,11 +63,22 @@
 
 @-webkit-keyframes pushin-pan {
 	0% {
-		background-position: 50% 100%;
+		background-position: 50% 10vh;
 		transform: scale(1.0);
 	}
 	100% {
-		background-position: 50% 0%;
+		background-position: 50% -10vh;
+		transform: scale(1.2);
+	}
+}
+
+@-webkit-keyframes pushin-pan-fast {
+	0% {
+		background-position: 50% 0;
+		transform: scale(1.0);
+	}
+	100% {
+		background-position: 50% 100%;
 		transform: scale(1.2);
 	}
 }

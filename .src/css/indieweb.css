@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'born';
-  src: url("/css/fonts/born.eot");
-  src: url("/css/fonts/born.eot?#iefix") format("embedded-opentype"), url("/css/fonts/born.woff2") format("woff2"), url("/css/fonts/born.woff") format("woff"), url("/css/fonts/born.ttf") format("truetype");
+  src: url("fonts/born.eot");
+  src: url("fonts/born.eot?#iefix") format("embedded-opentype"), url("fonts/born.woff2") format("woff2"), url("fonts/born.woff") format("woff"), url("fonts/born.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'neighbourhood';
-  src: url("/css/fonts/neighbourhood.eot");
-  src: url("/css/fonts/neighbourhood.eot?#iefix") format("embedded-opentype"), url("/css/fonts/neighbourhood.woff2") format("woff2"), url("/css/fonts/neighbourhood.woff") format("woff"), url("/css/fonts/neighbourhood.ttf") format("truetype");
+  src: url("fonts/neighbourhood.eot");
+  src: url("fonts/neighbourhood.eot?#iefix") format("embedded-opentype"), url("fonts/neighbourhood.woff2") format("woff2"), url("fonts/neighbourhood.woff") format("woff"), url("fonts/neighbourhood.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -18,7 +18,7 @@ html, body {
 
 h1, h2 {
   margin: 0 auto;
-  max-width: 70vw;
+  max-width: 80vw;
   padding: 0;
   line-height: 1;
   font-weight: normal; }
@@ -40,6 +40,9 @@ h2 {
     left: .06em;
     background-color: #fff;
     border-radius: .35vmin; }
+
+ol {
+  margin-left: -.8em; }
 
 .tagline, .big {
   font-size: 4vw; }
@@ -181,7 +184,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 15vh 15vw;
+    padding: 15vh 10vw;
     color: #fff;
     background-color: #2b242b;
     background-image: radial-gradient(ellipse farthest-corner, transparent 0, rgba(0, 0, 0, 0.4) 100%);
@@ -262,7 +265,7 @@ footer {
   background-position: center center; }
 
 .check {
-  background: transparent url("/img/checkmark.svg") left center no-repeat;
+  background: transparent url("../img/checkmark.svg") left center no-repeat;
   padding-left: 1.5em;
   background-size: auto 60%; }
 
@@ -272,7 +275,7 @@ footer {
 .ref {
   position: absolute;
   bottom: 10%;
-  left: 15%;
+  left: 10vw;
   opacity: .3; }
 
 figure {
@@ -361,27 +364,31 @@ blockquote b {
 .active .x.speed2 {
   -webkit-animation-duration: 1s; }
 
-#indie p > span {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50%; }
-  #indie p > span:first-child {
-    text-align: right;
-    -webkit-perspective: 300px;
-            perspective: 300px; }
+#indie p {
+  display: none; }
+  #indie p > span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%; }
+    #indie p > span:first-child {
+      text-align: right;
+      -webkit-perspective: 300px;
+              perspective: 300px; }
+  #indie p b {
+    -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    font-weight: normal;
+    left: 0;
+    top: 0;
+    color: #FBB03B; }
 
-#indie p b {
-  -webkit-transform-origin: 50% 100%;
-      -ms-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
-  opacity: 0;
-  display: inline-block;
-  width: 100%;
-  position: absolute;
-  font-weight: normal;
-  left: 0;
-  top: 0;
-  color: #FBB03B; }
+#indie.active p {
+  display: block; }
 
 #indie.indie b:first-child {
   color: #fff;
@@ -403,12 +410,13 @@ blockquote b {
   opacity: 0; }
 
 #_90s section {
-  background-image: url("/img/sketches/01_90er.png");
+  background-image: url("../img/sketches/01_90er.png");
   background-position: right center; }
 
 #old-website {
   background: transparent url("img/oldsite/background.gif") repeat;
-  font-family: "Comic Sans MS"; }
+  font-family: "Comic Sans MS";
+  padding: 2vh 10vw; }
   #old-website h1 {
     color: #ffff00;
     font-weight: bold;
@@ -429,11 +437,11 @@ blockquote b {
     color: #f00; }
 
 #_00s section {
-  background-image: url("/img/sketches/02_00er.png");
+  background-image: url("../img/sketches/02_00er.png");
   background-position: center right; }
 
 #zuckerberg .cover {
-  background-image: url("/img/zuckerberg.jpg");
+  background-image: url("../img/zuckerberg.jpg");
   background-size: cover; }
 
 #zuckerberg.active .cover {
@@ -441,14 +449,14 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #socialnetworks section {
-  background-image: url("/img/sketches/03_social-networks.png");
+  background-image: url("../img/sketches/03_social-networks.png");
   background-position: center left;
   padding-left: 50%; }
 
 #oldschool {
   background-image: radial-gradient(ellipse farthest-corner at 35% 50%, transparent 0, black 100%); }
   #oldschool section {
-    background-image: url("/img/sketches/04_oldschool.png");
+    background-image: url("../img/sketches/04_oldschool.png");
     background-position: center left;
     padding-left: 50%; }
   #oldschool .versus {
@@ -457,12 +465,12 @@ blockquote b {
     margin: .5em 1.5em; }
 
 #walled-gardens section {
-  background-image: url("/img/sketches/05_walled-gardens.png");
+  background-image: url("../img/sketches/05_walled-gardens.png");
   background-position: center left;
   padding-left: 65%; }
 
 #silo {
-  background: url("/img/collapsing-silo.gif") center no-repeat;
+  background: url("../img/collapsing-silo.gif") center no-repeat;
   background-size: cover; }
   #silo section::before {
     background-image: radial-gradient(ellipse farthest-corner, transparent 0, black 100%); }
@@ -470,11 +478,11 @@ blockquote b {
 #site-deaths {
   background-image: radial-gradient(ellipse farthest-corner at 70% 50%, transparent 0, black 100%); }
   #site-deaths section {
-    background-image: url("/img/sketches/06_site-deaths.png");
+    background-image: url("../img/sketches/06_site-deaths.png");
     background-position: center right; }
 
 #graveyard .cover {
-  background-image: url("/img/graveyard.jpg");
+  background-image: url("../img/graveyard.jpg");
   background-size: cover; }
 
 #graveyard.active .cover {
@@ -493,43 +501,43 @@ blockquote b {
     height: auto; }
 
 #independence section {
-  background-image: url("/img/sketches/07_federation.png");
+  background-image: url("../img/sketches/07_federation.png");
   background-position: center; }
 
 #syndication section {
-  background-image: url("/img/sketches/08_syndication.png");
+  background-image: url("../img/sketches/08_syndication.png");
   background-position: center left;
   padding-left: 50%; }
 
 #tom section {
-  background-image: url("/img/sketches/tom.png");
+  background-image: url("../img/sketches/tom.png");
   background-position: center left;
   padding-left: 50%; }
 
 .with-tom section {
-  background-image: url("/img/sketches/tom.png");
+  background-image: url("../img/sketches/tom.png");
   background-position: center left;
   background-size: auto 58vmin;
   padding-left: 50%; }
 
 #indiemark section {
-  background-image: url("/img/indiemark/intro.svg");
-  background-position: 80% 50%;
+  background-image: url("../img/indiemark/intro.svg");
+  background-position: 100% 50%;
   background-size: auto 60vmin; }
 
 #indieauth section {
-  background-image: url("/img/logos/indieauth.svg");
+  background-image: url("../img/logos/indieauth.svg");
   background-position: 25% center;
   background-size: 22% auto;
   padding-left: 50%; }
 
 #relme .cover {
-  background-image: url("/img/screenshots/relmeauth.png");
-  background-size: 74% auto;
-  background-position: 50% 60%; }
+  background-image: url("../img/screenshots/relmeauth.png");
+  background-size: 84% auto;
+  background-position: 50% 55%; }
 
 #login .cover {
-  background-image: url("/img/screenshots/indiewebcamp.com-login.png");
+  background-image: url("../img/screenshots/indiewebcamp.com-login.png");
   background-size: auto; }
 
 #login.active .cover {
@@ -537,16 +545,16 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indieauth-scan {
-  background: transparent url("/img/screenshots/indieauth-noise.jpg") center repeat; }
+  background: transparent url("../img/screenshots/indieauth-noise.jpg") center repeat; }
   #indieauth-scan .cover {
-    background-image: url("/img/screenshots/indieauth-scan.png");
+    background-image: url("../img/screenshots/indieauth-scan.png");
     background-size: auto; }
   #indieauth-scan.active .cover {
     -webkit-animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards;
             animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indieauth-twitter .cover {
-  background-image: url("/img/screenshots/indieauth-twitter.png");
+  background-image: url("../img/screenshots/indieauth-twitter.png");
   background-size: auto; }
 
 #indieauth-twitter.active .cover {
@@ -554,7 +562,7 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indieauth-delegation .cover {
-  background-image: url("/img/screenshots/indieauth-login.svg");
+  background-image: url("../img/screenshots/indieauth-login.svg");
   background-size: contain; }
 
 #indieauth-delegation.active .cover {
@@ -580,7 +588,7 @@ blockquote b {
   padding-right: 1em; }
 
 #permalinks .cover {
-  background-image: url("/img/screenshot-article.jpg");
+  background-image: url("../img/screenshot-article.jpg");
   background-size: 70% auto;
   background-position: 50% 40vh; }
 
@@ -589,12 +597,12 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #h-entry .cover {
-  background-image: url("/img/screenshots/hentry.png");
-  background-size: 74% auto;
-  background-position: 50% 65%; }
+  background-image: url("../img/screenshots/hentry.png");
+  background-size: 84% auto;
+  background-position: 50% 55%; }
 
 #robots .cover {
-  background-image: url("/img/eve.png");
+  background-image: url("../img/eve.png");
   background-size: 30% auto;
   background-position: 70% 60%; }
 
@@ -606,7 +614,7 @@ blockquote b {
   background-image: radial-gradient(ellipse farthest-corner at 35% 50%, transparent 0, black 100%); }
 
 #google-site-search .cover {
-  background-image: url("/img/screenshots/site-search-via-google.png");
+  background-image: url("../img/screenshots/site-search-via-google.png");
   background-size: auto; }
 
 #google-site-search.active .cover {
@@ -614,18 +622,23 @@ blockquote b {
           animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indiemark-l1-4 section {
-  background-image: url("/img/indiemark/level1.svg");
-  background-position: 80% 50%;
+  background-image: url("../img/indiemark/level1.svg");
+  background-position: 100% 50%;
   background-size: auto 60vmin; }
 
 #h-card .cover {
-  background-image: url("/img/screenshots/hcard.png");
-  background-size: 74% auto;
-  background-position: 50% 65%; }
+  background-image: url("../img/screenshots/hcard.png");
+  background-size: 84% auto;
+  background-position: 50% 55%; }
 
 #posse section, #pesos section {
-  background-size: 25vw auto;
+  background-size: auto 50vh;
   background-position: bottom left; }
+
+#posse .logos, #pesos .logos {
+  margin: -4vw 0 0 -15vh;
+  position: absolute;
+  top: 50%; }
 
 #posse img, #pesos img {
   vertical-align: middle;
@@ -634,17 +647,17 @@ blockquote b {
   margin-right: 3vw; }
 
 #indiemark-l2-3 section {
-  background-image: url("/img/indiemark/level2.svg");
-  background-position: 80% 50%;
+  background-image: url("../img/indiemark/level2.svg");
+  background-position: 100% 50%;
   background-size: auto 60vmin; }
 
 #indiemark-l3-1 section {
-  background-image: url("/img/logos/webmention.svg");
+  background-image: url("../img/logos/webmention.svg");
   background-position: 75% 75%;
   background-size: auto 30vh; }
 
 #webmention section {
-  background-image: url("/img/sketches/tom-lotte.png");
+  background-image: url("../img/sketches/tom-lotte.png");
   background-position: center;
   background-size: contain; }
 
@@ -658,12 +671,12 @@ blockquote b {
   background-size: contain;
   background-repeat: no-repeat; }
   #webmention li.tom-publishes {
-    background-image: url("/img/tom-lotte-1.svg");
+    background-image: url("../img/tom-lotte-1.svg");
     left: 35%;
     top: 20%;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
   #webmention li.lotte-replies {
-    background-image: url("/img/tom-lotte-2.svg");
+    background-image: url("../img/tom-lotte-2.svg");
     left: 58%;
     top: 12%;
     -webkit-transform: scale(0.8);
@@ -671,22 +684,44 @@ blockquote b {
             transform: scale(0.8);
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
   #webmention li.lotte-sends-webmention {
-    background-image: url("/img/tom-lotte-webmention.svg");
+    background-image: url("../img/tom-lotte-webmention.svg");
     left: 47%;
     top: 45%;
     width: 13vw; }
+  #webmention li.http-request {
+    width: 50%;
+    height: auto;
+    bottom: 15vh;
+    right: 0; }
+    #webmention li.http-request pre {
+      font-size: 2vh;
+      display: block; }
   #webmention li.tom-publishes-reply {
-    background-image: url("/img/tom-lotte-3.svg");
+    background-image: url("../img/tom-lotte-3.svg");
     left: 35%;
     top: 20%; }
+
+#webmentions .cover {
+  background-image: url("../img/screenshots/webmentions.png");
+  background-size: auto; }
+
+#webmentions.active .cover {
+  -webkit-animation: pushin-pan-fast 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards;
+          animation: pushin-pan-fast 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #generations img {
   max-width: 100%;
   max-height: 40vh;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1em; }
+
+#iwcnbg img {
+  height: 20vh;
+  width: auto;
+  margin-top: 1em; }
 
 #jump .cover {
-  background-image: url("/img/iwcdus2015.jpg");
+  background-image: url("../img/iwcdus2015.jpg");
   background-size: cover; }
 
 #jump.active .cover {
@@ -747,11 +782,21 @@ blockquote b {
 
 @-webkit-keyframes pushin-pan {
   0% {
-    background-position: 50% 100%;
+    background-position: 50% 10vh;
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    background-position: 50% 0%;
+    background-position: 50% -10vh;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+
+@-webkit-keyframes pushin-pan-fast {
+  0% {
+    background-position: 50% 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    background-position: 50% 100%;
     -webkit-transform: scale(1.2);
             transform: scale(1.2); } }
 

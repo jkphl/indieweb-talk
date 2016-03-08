@@ -5,7 +5,7 @@ html, body {
 
 h1, h2 {
 	margin: 0 auto;
-	max-width: 70vw;
+	max-width: 80vw;
 	padding: 0;
 	line-height: 1;
 	font-weight: normal;
@@ -32,6 +32,10 @@ h2 {
 		background-color: $foreground;
 		border-radius: .35vmin;
 	}
+}
+
+ol {
+	margin-left: -.8em;
 }
 
 .tagline, .big {
@@ -200,7 +204,7 @@ ul {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		padding: 15vh 15vw;
+		padding: 15vh 10vw;
 		color: $foreground;
 		background-color: $background;
 		background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.4) 100%);
@@ -305,7 +309,7 @@ footer {
 }
 
 .check {
-	background: transparent url('/img/checkmark.svg') left center no-repeat;
+	background: transparent url('../img/checkmark.svg') left center no-repeat;
 	padding-left: 1.5em;
 	background-size: auto 60%;
 }
@@ -317,7 +321,7 @@ footer {
 .ref {
 	position: absolute;
 	bottom: 10%;
-	left: 15%;
+	left: 10vw;
 	opacity: .3;
 }
 
