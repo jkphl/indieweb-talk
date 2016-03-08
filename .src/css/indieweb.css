@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-size: 8vw;
-  margin-bottom: .3em;
+  margin: 0 0 .3em -.06em;
   position: relative;
   z-index: 99; }
   h2::after {
@@ -37,7 +37,7 @@ h2 {
     height: .7vmin;
     width: 12vw;
     bottom: -.08em;
-    left: .03em;
+    left: .06em;
     background-color: #fff;
     border-radius: .35vmin; }
 
@@ -181,7 +181,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10% 15%;
+    padding: 15vh 15vw;
     color: #fff;
     background-color: #2b242b;
     background-image: radial-gradient(ellipse farthest-corner, transparent 0, rgba(0, 0, 0, 0.4) 100%);
@@ -509,12 +509,13 @@ blockquote b {
 .with-tom section {
   background-image: url("/img/sketches/tom.png");
   background-position: center left;
+  background-size: auto 58vmin;
   padding-left: 50%; }
 
 #indiemark section {
   background-image: url("/img/indiemark/intro.svg");
-  background-position: center right;
-  background-size: 40vw auto; }
+  background-position: 80% 50%;
+  background-size: auto 60vmin; }
 
 #indieauth section {
   background-image: url("/img/logos/indieauth.svg");
@@ -614,8 +615,8 @@ blockquote b {
 
 #indiemark-l1-4 section {
   background-image: url("/img/indiemark/level1.svg");
-  background-position: center right;
-  background-size: 40vw auto; }
+  background-position: 80% 50%;
+  background-size: auto 60vmin; }
 
 #h-card .cover {
   background-image: url("/img/screenshots/hcard.png");
@@ -634,8 +635,55 @@ blockquote b {
 
 #indiemark-l2-3 section {
   background-image: url("/img/indiemark/level2.svg");
-  background-position: center right;
-  background-size: 40vw auto; }
+  background-position: 80% 50%;
+  background-size: auto 60vmin; }
+
+#indiemark-l3-1 section {
+  background-image: url("/img/logos/webmention.svg");
+  background-position: 75% 75%;
+  background-size: auto 30vh; }
+
+#webmention section {
+  background-image: url("/img/sketches/tom-lotte.png");
+  background-position: center;
+  background-size: contain; }
+
+#webmention li {
+  position: absolute;
+  width: 14vmin;
+  height: 19.8vmin;
+  text-indent: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  #webmention li.tom-publishes {
+    background-image: url("/img/tom-lotte-1.svg");
+    left: 35%;
+    top: 20%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
+  #webmention li.lotte-replies {
+    background-image: url("/img/tom-lotte-2.svg");
+    left: 58%;
+    top: 12%;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
+  #webmention li.lotte-sends-webmention {
+    background-image: url("/img/tom-lotte-webmention.svg");
+    left: 47%;
+    top: 45%;
+    width: 13vw; }
+  #webmention li.tom-publishes-reply {
+    background-image: url("/img/tom-lotte-3.svg");
+    left: 35%;
+    top: 20%; }
+
+#generations img {
+  max-width: 100%;
+  max-height: 40vh;
+  width: 100%; }
 
 #jump .cover {
   background-image: url("/img/iwcdus2015.jpg");

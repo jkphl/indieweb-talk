@@ -18,7 +18,7 @@ h1 {
 
 h2 {
 	font-size: 8vw;
-	margin-bottom: .3em;
+	margin: 0 0 .3em -.06em;
 	position: relative;
 	z-index: 99;
 
@@ -28,7 +28,7 @@ h2 {
 		height: .7vmin;
 		width: 12vw;
 		bottom: -.08em;
-		left: .03em;
+		left: .06em;
 		background-color: $foreground;
 		border-radius: .35vmin;
 	}
@@ -200,7 +200,7 @@ ul {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		padding: 10% 15%;
+		padding: 15vh 15vw;
 		color: $foreground;
 		background-color: $background;
 		background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.4) 100%);
