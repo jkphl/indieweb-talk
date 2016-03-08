@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'born';
-  src: url("fonts/born.eot");
-  src: url("fonts/born.eot?#iefix") format("embedded-opentype"), url("fonts/born.woff2") format("woff2"), url("fonts/born.woff") format("woff"), url("fonts/born.ttf") format("truetype");
+  src: url("css/fonts/born.eot");
+  src: url("css/fonts/born.eot?#iefix") format("embedded-opentype"), url("css/fonts/born.woff2") format("woff2"), url("css/fonts/born.woff") format("woff"), url("css/fonts/born.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'neighbourhood';
-  src: url("fonts/neighbourhood.eot");
-  src: url("fonts/neighbourhood.eot?#iefix") format("embedded-opentype"), url("fonts/neighbourhood.woff2") format("woff2"), url("fonts/neighbourhood.woff") format("woff"), url("fonts/neighbourhood.ttf") format("truetype");
+  src: url("css/fonts/neighbourhood.eot");
+  src: url("css/fonts/neighbourhood.eot?#iefix") format("embedded-opentype"), url("css/fonts/neighbourhood.woff2") format("woff2"), url("css/fonts/neighbourhood.woff") format("woff"), url("css/fonts/neighbourhood.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -265,7 +265,7 @@ footer {
   background-position: center center; }
 
 .check {
-  background: transparent url("../img/checkmark.svg") left center no-repeat;
+  background: transparent url("img/checkmark.svg") left center no-repeat;
   padding-left: 1.5em;
   background-size: auto 60%; }
 
@@ -410,7 +410,7 @@ blockquote b {
   opacity: 0; }
 
 #_90s section {
-  background-image: url("../img/sketches/01_90er.png");
+  background-image: url("img/sketches/01_90er.png");
   background-position: right center; }
 
 #old-website {
@@ -437,11 +437,11 @@ blockquote b {
     color: #f00; }
 
 #_00s section {
-  background-image: url("../img/sketches/02_00er.png");
+  background-image: url("img/sketches/02_00er.png");
   background-position: center right; }
 
 #zuckerberg .cover {
-  background-image: url("../img/zuckerberg.jpg");
+  background-image: url("img/zuckerberg.jpg");
   background-size: cover; }
 
 #zuckerberg.active .cover {
@@ -449,14 +449,14 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #socialnetworks section {
-  background-image: url("../img/sketches/03_social-networks.png");
+  background-image: url("img/sketches/03_social-networks.png");
   background-position: center left;
   padding-left: 50%; }
 
 #oldschool {
   background-image: radial-gradient(ellipse farthest-corner at 35% 50%, transparent 0, black 100%); }
   #oldschool section {
-    background-image: url("../img/sketches/04_oldschool.png");
+    background-image: url("img/sketches/04_oldschool.png");
     background-position: center left;
     padding-left: 50%; }
   #oldschool .versus {
@@ -465,12 +465,12 @@ blockquote b {
     margin: .5em 1.5em; }
 
 #walled-gardens section {
-  background-image: url("../img/sketches/05_walled-gardens.png");
+  background-image: url("img/sketches/05_walled-gardens.png");
   background-position: center left;
   padding-left: 65%; }
 
 #silo {
-  background: url("../img/collapsing-silo.gif") center no-repeat;
+  background: url("img/collapsing-silo.gif") center no-repeat;
   background-size: cover; }
   #silo section::before {
     background-image: radial-gradient(ellipse farthest-corner, transparent 0, black 100%); }
@@ -478,11 +478,11 @@ blockquote b {
 #site-deaths {
   background-image: radial-gradient(ellipse farthest-corner at 70% 50%, transparent 0, black 100%); }
   #site-deaths section {
-    background-image: url("../img/sketches/06_site-deaths.png");
+    background-image: url("img/sketches/06_site-deaths.png");
     background-position: center right; }
 
 #graveyard .cover {
-  background-image: url("../img/graveyard.jpg");
+  background-image: url("img/graveyard.jpg");
   background-size: cover; }
 
 #graveyard.active .cover {
@@ -501,43 +501,43 @@ blockquote b {
     height: auto; }
 
 #independence section {
-  background-image: url("../img/sketches/07_federation.png");
+  background-image: url("img/sketches/07_federation.png");
   background-position: center; }
 
 #syndication section {
-  background-image: url("../img/sketches/08_syndication.png");
+  background-image: url("img/sketches/08_syndication.png");
   background-position: center left;
   padding-left: 50%; }
 
 #tom section {
-  background-image: url("../img/sketches/tom.png");
+  background-image: url("img/sketches/tom.png");
   background-position: center left;
   padding-left: 50%; }
 
 .with-tom section {
-  background-image: url("../img/sketches/tom.png");
+  background-image: url("img/sketches/tom.png");
   background-position: center left;
   background-size: auto 58vmin;
   padding-left: 50%; }
 
 #indiemark section {
-  background-image: url("../img/indiemark/intro.svg");
+  background-image: url("img/indiemark/intro.svg");
   background-position: 100% 50%;
   background-size: auto 60vmin; }
 
 #indieauth section {
-  background-image: url("../img/logos/indieauth.svg");
+  background-image: url("img/logos/indieauth.svg");
   background-position: 25% center;
   background-size: 22% auto;
   padding-left: 50%; }
 
 #relme .cover {
-  background-image: url("../img/screenshots/relmeauth.png");
+  background-image: url("img/screenshots/relmeauth.png");
   background-size: 84% auto;
   background-position: 50% 55%; }
 
 #login .cover {
-  background-image: url("../img/screenshots/indiewebcamp.com-login.png");
+  background-image: url("img/screenshots/indiewebcamp.com-login.png");
   background-size: auto; }
 
 #login.active .cover {
@@ -545,16 +545,16 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indieauth-scan {
-  background: transparent url("../img/screenshots/indieauth-noise.jpg") center repeat; }
+  background: transparent url("img/screenshots/indieauth-noise.jpg") center repeat; }
   #indieauth-scan .cover {
-    background-image: url("../img/screenshots/indieauth-scan.png");
+    background-image: url("img/screenshots/indieauth-scan.png");
     background-size: auto; }
   #indieauth-scan.active .cover {
     -webkit-animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards;
             animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indieauth-twitter .cover {
-  background-image: url("../img/screenshots/indieauth-twitter.png");
+  background-image: url("img/screenshots/indieauth-twitter.png");
   background-size: auto; }
 
 #indieauth-twitter.active .cover {
@@ -562,7 +562,7 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indieauth-delegation .cover {
-  background-image: url("../img/screenshots/indieauth-login.svg");
+  background-image: url("img/screenshots/indieauth-login.svg");
   background-size: contain; }
 
 #indieauth-delegation.active .cover {
@@ -588,7 +588,7 @@ blockquote b {
   padding-right: 1em; }
 
 #permalinks .cover {
-  background-image: url("../img/screenshot-article.jpg");
+  background-image: url("img/screenshot-article.jpg");
   background-size: 70% auto;
   background-position: 50% 40vh; }
 
@@ -597,12 +597,12 @@ blockquote b {
           animation: pushin 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #h-entry .cover {
-  background-image: url("../img/screenshots/hentry.png");
+  background-image: url("img/screenshots/hentry.png");
   background-size: 84% auto;
   background-position: 50% 55%; }
 
 #robots .cover {
-  background-image: url("../img/eve.png");
+  background-image: url("img/eve.png");
   background-size: 30% auto;
   background-position: 70% 60%; }
 
@@ -613,21 +613,21 @@ blockquote b {
 #curl {
   background-image: radial-gradient(ellipse farthest-corner at 35% 50%, transparent 0, black 100%); }
 
-#google-site-search .cover {
-  background-image: url("../img/screenshots/site-search-via-google.png");
+#-site-search .cover {
+  background-image: url("img/screenshots/site-search-via-.png");
   background-size: auto; }
 
-#google-site-search.active .cover {
+#-site-search.active .cover {
   -webkit-animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards;
           animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
 #indiemark-l1-4 section {
-  background-image: url("../img/indiemark/level1.svg");
+  background-image: url("img/indiemark/level1.svg");
   background-position: 100% 50%;
   background-size: auto 60vmin; }
 
 #h-card .cover {
-  background-image: url("../img/screenshots/hcard.png");
+  background-image: url("img/screenshots/hcard.png");
   background-size: 84% auto;
   background-position: 50% 55%; }
 
@@ -647,17 +647,17 @@ blockquote b {
   margin-right: 3vw; }
 
 #indiemark-l2-3 section {
-  background-image: url("../img/indiemark/level2.svg");
+  background-image: url("img/indiemark/level2.svg");
   background-position: 100% 50%;
   background-size: auto 60vmin; }
 
 #indiemark-l3-1 section {
-  background-image: url("../img/logos/webmention.svg");
+  background-image: url("img/logos/webmention.svg");
   background-position: 75% 75%;
   background-size: auto 30vh; }
 
 #webmention section {
-  background-image: url("../img/sketches/tom-lotte.png");
+  background-image: url("img/sketches/tom-lotte.png");
   background-position: center;
   background-size: contain; }
 
@@ -671,12 +671,12 @@ blockquote b {
   background-size: contain;
   background-repeat: no-repeat; }
   #webmention li.tom-publishes {
-    background-image: url("../img/tom-lotte-1.svg");
+    background-image: url("img/tom-lotte-1.svg");
     left: 35%;
     top: 20%;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
   #webmention li.lotte-replies {
-    background-image: url("../img/tom-lotte-2.svg");
+    background-image: url("img/tom-lotte-2.svg");
     left: 58%;
     top: 12%;
     -webkit-transform: scale(0.8);
@@ -684,7 +684,7 @@ blockquote b {
             transform: scale(0.8);
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
   #webmention li.lotte-sends-webmention {
-    background-image: url("../img/tom-lotte-webmention.svg");
+    background-image: url("img/tom-lotte-webmention.svg");
     left: 47%;
     top: 45%;
     width: 13vw; }
@@ -697,12 +697,12 @@ blockquote b {
       font-size: 2vh;
       display: block; }
   #webmention li.tom-publishes-reply {
-    background-image: url("../img/tom-lotte-3.svg");
+    background-image: url("img/tom-lotte-3.svg");
     left: 35%;
     top: 20%; }
 
 #webmentions .cover {
-  background-image: url("../img/screenshots/webmentions.png");
+  background-image: url("img/screenshots/webmentions.png");
   background-size: auto; }
 
 #webmentions.active .cover {
@@ -721,7 +721,7 @@ blockquote b {
   margin-top: 1em; }
 
 #jump .cover {
-  background-image: url("../img/iwcdus2015.jpg");
+  background-image: url("img/iwcdus2015.jpg");
   background-size: cover; }
 
 #jump.active .cover {

@@ -154,9 +154,9 @@
     }
 
     function mouse_down($event) {
-        //var old = current;
-        //current = next(old, CYCLE);
-        //transition(old, current, 'forward');
+        var old = current;
+        current = next(old, CYCLE);
+        transition(old, current, 'forward');
     }
 
     if (window.location.hash) {

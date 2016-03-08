@@ -62,9 +62,10 @@
 	}
 }
 
+
 #_90s {
 	section {
-		background-image: url('../img/sketches/01_90er.png');
+		background-image: url('img/sketches/01_90er.png');
 		background-position: right center;
 	}
 }
@@ -105,14 +106,14 @@
 
 #_00s {
 	section {
-		background-image: url('../img/sketches/02_00er.png');
+		background-image: url('img/sketches/02_00er.png');
 		background-position: center right;
 	}
 }
 
 #zuckerberg {
 	.cover {
-		background-image: url('../img/zuckerberg.jpg');
+		background-image: url('img/zuckerberg.jpg');
 		background-size: cover;
 	}
 
@@ -123,7 +124,7 @@
 
 #socialnetworks{
 	section {
-		background-image: url('../img/sketches/03_social-networks.png');
+		background-image: url('img/sketches/03_social-networks.png');
 		background-position: center left;
 		padding-left: 50%;
 	}
@@ -133,7 +134,7 @@
 	background-image: radial-gradient(ellipse farthest-corner at 35% 50%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
 
 	section {
-		background-image: url('../img/sketches/04_oldschool.png');
+		background-image: url('img/sketches/04_oldschool.png');
 		background-position: center left;
 		padding-left: 50%;
 	}
@@ -147,14 +148,14 @@
 
 #walled-gardens{
 	section {
-		background-image: url('../img/sketches/05_walled-gardens.png');
+		background-image: url('img/sketches/05_walled-gardens.png');
 		background-position: center left;
 		padding-left: 65%;
 	}
 }
 
 #silo {
-	background: url('../img/collapsing-silo.gif') center no-repeat;
+	background: url('img/collapsing-silo.gif') center no-repeat;
 	background-size: cover;
 
 	section::before {
@@ -166,14 +167,14 @@
 	background-image: radial-gradient(ellipse farthest-corner at 70% 50%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
 
 	section {
-		background-image: url('../img/sketches/06_site-deaths.png');
+		background-image: url('img/sketches/06_site-deaths.png');
 		background-position: center right;
 	}
 }
 
 #graveyard {
 	.cover {
-		background-image: url('../img/graveyard.jpg');
+		background-image: url('img/graveyard.jpg');
 		background-size: cover;
 	}
 
@@ -201,14 +202,14 @@
 
 #independence {
 	section {
-		background-image: url('../img/sketches/07_federation.png');
+		background-image: url('img/sketches/07_federation.png');
 		background-position: center;
 	}
 }
 
 #syndication {
 	section {
-		background-image: url('../img/sketches/08_syndication.png');
+		background-image: url('img/sketches/08_syndication.png');
 		background-position: center left;
 		padding-left: 50%;
 	}
@@ -220,7 +221,7 @@
 
 #tom {
 	section {
-		background-image: url('../img/sketches/tom.png');
+		background-image: url('img/sketches/tom.png');
 		background-position: center left;
 		padding-left: 50%;
 	}
@@ -228,7 +229,7 @@
 
 .with-tom {
 	section {
-		background-image: url('../img/sketches/tom.png');
+		background-image: url('img/sketches/tom.png');
 		background-position: center left;
 		background-size: auto 58vmin;
 		padding-left: 50%;
@@ -237,7 +238,7 @@
 
 #indiemark {
 	section {
-		background-image: url('../img/indiemark/intro.svg');
+		background-image: url('img/indiemark/intro.svg');
 		background-position: 100% 50%;
 		background-size: auto 60vmin;
 	}
@@ -245,7 +246,7 @@
 
 #indieauth {
 	section {
-		background-image: url('../img/logos/indieauth.svg');
+		background-image: url('img/logos/indieauth.svg');
 		background-position: 25% center;
 		background-size: 22% auto;
 		padding-left: 50%;
@@ -254,7 +255,7 @@
 
 #relme {
 	.cover {
-		background-image: url('../img/screenshots/relmeauth.png');
+		background-image: url('img/screenshots/relmeauth.png');
 		background-size: 84% auto;
 		background-position: 50% 55%;
 	}
@@ -262,7 +263,7 @@
 
 #login {
 	.cover {
-		background-image: url('../img/screenshots/indiewebcamp.com-login.png');
+		background-image: url('img/screenshots/indiewebcamp.com-login.png');
 		background-size: auto;
 	}
 
@@ -272,10 +273,10 @@
 }
 
 #indieauth-scan {
-	background: transparent url('../img/screenshots/indieauth-noise.jpg') center repeat;
+	background: transparent url('img/screenshots/indieauth-noise.jpg') center repeat;
 
 	.cover {
-		background-image: url('../img/screenshots/indieauth-scan.png');
+		background-image: url('img/screenshots/indieauth-scan.png');
 		background-size: auto;
 	}
 
@@ -286,7 +287,7 @@
 
 #indieauth-twitter {
 	.cover {
-		background-image: url('../img/screenshots/indieauth-twitter.png');
+		background-image: url('img/screenshots/indieauth-twitter.png');
 		background-size: auto;
 	}
 
@@ -297,7 +298,7 @@
 
 #indieauth-delegation {
 	.cover {
-		background-image: url('../img/screenshots/indieauth-login.svg');
+		background-image: url('img/screenshots/indieauth-login.svg');
 		background-size: contain;
 	}
 
@@ -330,7 +331,7 @@
 
 #permalinks {
 	.cover {
-		background-image: url('../img/screenshot-article.jpg');
+		background-image: url('img/screenshot-article.jpg');
 		background-size: 70% auto;
 		background-position: 50% 40vh;
 	}
@@ -342,7 +343,7 @@
 
 #h-entry {
 	.cover {
-		background-image: url('../img/screenshots/hentry.png');
+		background-image: url('img/screenshots/hentry.png');
 		background-size: 84% auto;
 		background-position: 50% 55%;
 	}
@@ -350,7 +351,7 @@
 
 #robots {
 	.cover {
-		background-image: url('../img/eve.png');
+		background-image: url('img/eve.png');
 		background-size: 30% auto;
 		background-position: 70% 60%;
 	}
@@ -364,9 +365,9 @@
 	background-image: radial-gradient(ellipse farthest-corner at 35% 50%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
 }
 
-#google-site-search {
+#-site-search {
 	.cover {
-		background-image: url('../img/screenshots/site-search-via-google.png');
+		background-image: url('img/screenshots/site-search-via-.png');
 		background-size: auto;
 	}
 
@@ -377,7 +378,7 @@
 
 #indiemark-l1-4 {
 	section {
-		background-image: url('../img/indiemark/level1.svg');
+		background-image: url('img/indiemark/level1.svg');
 		background-position: 100% 50%;
 		background-size: auto 60vmin;
 	}
@@ -385,7 +386,7 @@
 
 #h-card {
 	.cover {
-		background-image: url('../img/screenshots/hcard.png');
+		background-image: url('img/screenshots/hcard.png');
 		background-size: 84% auto;
 		background-position: 50% 55%;
 	}
@@ -413,7 +414,7 @@
 
 #indiemark-l2-3 {
 	section {
-		background-image: url('../img/indiemark/level2.svg');
+		background-image: url('img/indiemark/level2.svg');
 		background-position: 100% 50%;
 		background-size: auto 60vmin;
 	}
@@ -421,7 +422,7 @@
 
 #indiemark-l3-1 {
 	section {
-		background-image: url('../img/logos/webmention.svg');
+		background-image: url('img/logos/webmention.svg');
 		background-position: 75% 75%;
 		background-size: auto 30vh;
 	}
@@ -429,7 +430,7 @@
 
 #webmention {
 	section {
-		background-image: url('../img/sketches/tom-lotte.png');
+		background-image: url('img/sketches/tom-lotte.png');
 		background-position: center;
 		background-size: contain;
 	}
@@ -445,14 +446,14 @@
 		background-repeat: no-repeat;
 
 		&.tom-publishes {
-			background-image: url('../img/tom-lotte-1.svg');
+			background-image: url('img/tom-lotte-1.svg');
 			left: 35%;
 			top: 20%;
 			box-shadow: 0 0 1em rgba(0, 0, 0, .4);
 		}
 
 		&.lotte-replies {
-			background-image: url('../img/tom-lotte-2.svg');
+			background-image: url('img/tom-lotte-2.svg');
 			 left: 58%;
 			 top: 12%;
 			 transform: scale(.8);
@@ -460,7 +461,7 @@
 		}
 
 		&.lotte-sends-webmention {
-			background-image: url('../img/tom-lotte-webmention.svg');
+			background-image: url('img/tom-lotte-webmention.svg');
 			 left: 47%;
 			 top: 45%;
 			 width: 13vw;
@@ -478,7 +479,7 @@
 		 }
 
 		&.tom-publishes-reply {
-			background-image: url('../img/tom-lotte-3.svg');
+			background-image: url('img/tom-lotte-3.svg');
 			 left: 35%;
 			 top: 20%;
 		}
@@ -486,14 +487,14 @@
 }
 
 #webmentions {
-.cover {
-	background-image: url('../img/screenshots/webmentions.png');
-	background-size: auto;
-}
+	.cover {
+		background-image: url('img/screenshots/webmentions.png');
+		background-size: auto;
+	}
 
-&.active .cover {
-	 animation: pushin-pan-fast 20s cubic-bezier(.2, .3, .25, .9) forwards;
- }
+	&.active .cover {
+		 animation: pushin-pan-fast 20s cubic-bezier(.2, .3, .25, .9) forwards;
+	 }
 }
 
 #generations {
@@ -519,7 +520,7 @@
 
 #jump {
 	.cover {
-		background-image: url('../img/iwcdus2015.jpg');
+		background-image: url('img/iwcdus2015.jpg');
 		background-size: cover;
 	}
 
