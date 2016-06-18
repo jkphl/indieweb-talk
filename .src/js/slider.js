@@ -8,6 +8,7 @@
     var currentSteps = [];
     var min_index = 0;
     var max_index = $slides.length - 1;
+    var interactive = false;
 
     // reverse z-index stack so that first slide is on top
     $slides.each(function (i) {
@@ -90,7 +91,7 @@
             return index;
         } else {
             var new_index = index - 1;
-            return new_index >= min_index ? new_index : cycle ? max_index : min_index;
+            return (new_index >= min_index) ? new_index : (cycle ? max_index : min_index);
         }
     }
 
@@ -100,7 +101,7 @@
             return index;
         } else {
             var new_index = index + 1;
-            new_index = new_index <= max_index ? new_index : cycle ? min_index : max_index;
+            new_index = (new_index <= max_index) ? new_index : (cycle ? min_index : max_index);
             //tint(new_index);
             return new_index;
         }
@@ -125,6 +126,10 @@
         $('body').css('cursor', 'none' === $('body').css('cursor') ? 'crosshair' : 'none');
     }
 
+    function toggleInteractive() {
+        interactive = !interactive;
+    }
+
     function key_down($event) {
         var old = current;
         switch ($event.keyCode) {
@@ -145,7 +150,11 @@
             case 17: // [ctrl]
                 toggleMouse();
                 return;
+            case 16: // [shift]
+                toggleInteractive();
+                return;
             default:
+                console.log($event.keyCode);
                 return;
         }
         if (current !== old) {
