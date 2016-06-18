@@ -56,7 +56,7 @@
         var steps = $next.attr('data-steps');
         if (steps && steps.length) {
             currentSteps = steps.split(' ');
-        } else if (list = $next.find('ul:not(.static) li').length) {
+        } else if (interactive && (list = $next.find('ul:not(.static) li').length)) {
             currentSteps = [];
             for (var s = 0; s <= list; ++s) {
                 currentSteps.push('step-' + s);
@@ -154,7 +154,6 @@
                 toggleInteractive();
                 return;
             default:
-                console.log($event.keyCode);
                 return;
         }
         if (current !== old) {
