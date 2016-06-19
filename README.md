@@ -4,3 +4,14 @@
 
 > IndieWeb Hack Day Nuremberg 2016<br/>
 > Presentation slides (English version)
+
+___
+
+Please view these slides in landscape orientation online at [https://jkphl.is/slides/ihdnue2016](https://jkphl.is/slides/ihdnue2016).
+
+#### Keyboard shortcuts
+
+* `Page up`, `←`, `↑`: Previous slide
+* `Space`, `Return`, `Page down`, `→`, `↓`: Next slide
+* `Ctrl`: Toggle mouse cursor
+* `Shift`: Toggle interactive mode (stepwise display of list items)
