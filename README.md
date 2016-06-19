@@ -7,7 +7,7 @@
 
 ___
 
-Please view these slides in landscape orientation online at [https://jkphl.is/slides/ihdnue2016](https://jkphl.is/slides/ihdnue2016).
+Please view these slides in landscape orientation online at [https://jkphl.is/slides/ihdnue2016-en](https://jkphl.is/slides/ihdnue2016-en).
 
 #### Keyboard shortcuts
 
