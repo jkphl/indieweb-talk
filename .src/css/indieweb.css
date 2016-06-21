@@ -525,6 +525,10 @@ blockquote b {
   background-position: 100% 50%;
   background-size: auto 60vmin; }
 
+@media screen and (min-aspect-ratio: 3 / 2) {
+  #indiemark section {
+    background-size: auto 70vmin; } }
+
 #indieauth section {
   background-image: url("img/logos/indieauth.svg");
   background-position: 25% center;
@@ -534,7 +538,11 @@ blockquote b {
 #relme .cover {
   background-image: url("img/screenshots/relmeauth.png");
   background-size: 84% auto;
-  background-position: 50% 55%; }
+  background-position: 50% 50%; }
+
+@media screen and (min-aspect-ratio: 3 / 2) {
+  #relme .cover {
+    background-position: 50% 65%; } }
 
 #login .cover {
   background-image: url("img/screenshots/indiewebcamp.com-login.png");
@@ -599,7 +607,11 @@ blockquote b {
 #h-entry .cover {
   background-image: url("img/screenshots/hentry.png");
   background-size: 84% auto;
-  background-position: 50% 55%; }
+  background-position: 50% 50%; }
+
+@media screen and (min-aspect-ratio: 3 / 2) {
+  #h-entry .cover {
+    background-position: 50% 65%; } }
 
 #robots .cover {
   background-image: url("img/eve.png");
@@ -613,11 +625,11 @@ blockquote b {
 #curl {
   background-image: radial-gradient(ellipse farthest-corner at 35% 50%, transparent 0, black 100%); }
 
-#-site-search .cover {
-  background-image: url("img/screenshots/site-search-via-.png");
+#google-site-search .cover {
+  background-image: url("img/screenshots/site-search-via-google.png");
   background-size: auto; }
 
-#-site-search.active .cover {
+#google-site-search.active .cover {
   -webkit-animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards;
           animation: pushin-pan 20s cubic-bezier(0.2, 0.3, 0.25, 0.9) forwards; }
 
@@ -626,10 +638,18 @@ blockquote b {
   background-position: 100% 50%;
   background-size: auto 60vmin; }
 
+@media screen and (min-aspect-ratio: 3 / 2) {
+  #indiemark-l1-4 section {
+    background-size: auto 70vmin; } }
+
 #h-card .cover {
   background-image: url("img/screenshots/hcard.png");
   background-size: 84% auto;
-  background-position: 50% 55%; }
+  background-position: 50% 50%; }
+
+@media screen and (min-aspect-ratio: 3 / 2) {
+  #h-card .cover {
+    background-position: 50% 65%; } }
 
 #posse section, #pesos section {
   background-size: auto 50vh;
@@ -650,6 +670,10 @@ blockquote b {
   background-image: url("img/indiemark/level2.svg");
   background-position: 100% 50%;
   background-size: auto 60vmin; }
+
+@media screen and (min-aspect-ratio: 3 / 2) {
+  #indiemark-l2-3 section {
+    background-size: auto 70vmin; } }
 
 #indiemark-l3-1 section {
   background-image: url("img/logos/webmention.svg");
@@ -713,11 +737,6 @@ blockquote b {
   max-width: 100%;
   max-height: 40vh;
   width: 100%;
-  margin-top: 1em; }
-
-#iwcnbg img {
-  height: 20vh;
-  width: auto;
   margin-top: 1em; }
 
 #jump .cover {

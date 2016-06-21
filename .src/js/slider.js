@@ -8,6 +8,7 @@
     var currentSteps = [];
     var min_index = 0;
     var max_index = $slides.length - 1;
+    var interactive = false;
 
     // reverse z-index stack so that first slide is on top
     $slides.each(function (i) {
@@ -55,7 +56,7 @@
         var steps = $next.attr('data-steps');
         if (steps && steps.length) {
             currentSteps = steps.split(' ');
-        } else if (list = $next.find('ul:not(.static) li').length) {
+        } else if (interactive && (list = $next.find('ul:not(.static) li').length)) {
             currentSteps = [];
             for (var s = 0; s <= list; ++s) {
                 currentSteps.push('step-' + s);
@@ -90,7 +91,7 @@
             return index;
         } else {
             var new_index = index - 1;
-            return new_index >= min_index ? new_index : cycle ? max_index : min_index;
+            return (new_index >= min_index) ? new_index : (cycle ? max_index : min_index);
         }
     }
 
@@ -100,15 +101,15 @@
             return index;
         } else {
             var new_index = index + 1;
-            new_index = new_index <= max_index ? new_index : cycle ? min_index : max_index;
+            new_index = (new_index <= max_index) ? new_index : (cycle ? min_index : max_index);
             //tint(new_index);
             return new_index;
         }
     }
 
     //function tint(index) {
-        //var bgcolor = $slides.eq(index).css('background-color');
-        //$('body').css('background-color', bgcolor);
+    //var bgcolor = $slides.eq(index).css('background-color');
+    //$('body').css('background-color', bgcolor);
     //}
 
     function step($slide, step) {
@@ -123,6 +124,10 @@
 
     function toggleMouse() {
         $('body').css('cursor', 'none' === $('body').css('cursor') ? 'crosshair' : 'none');
+    }
+
+    function toggleInteractive() {
+        interactive = !interactive;
     }
 
     function key_down($event) {
@@ -144,6 +149,9 @@
                 return;
             case 17: // [ctrl]
                 toggleMouse();
+                return;
+            case 16: // [shift]
+                toggleInteractive();
                 return;
             default:
                 return;
