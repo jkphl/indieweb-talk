@@ -426,6 +426,7 @@ blockquote b {
   #old-website .blink {
     text-decoration: blink; }
   #old-website marquee {
+    margin-top: 1em;
     background-color: #00f;
     color: #f00; }
 

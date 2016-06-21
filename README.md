@@ -1,17 +1,17 @@
 # IndieWeb
 <img src="https://cdn.rawgit.com/jkphl/indieweb-talk/master/public/img/indiewebcamp.svg" alt="IndieWebCamp Logo 2016" align="right"/>
-### Your data. Your web.
+### Deine Daten. Dein Netz.
 
-> IndieWeb Hack Day Nuremberg 2016<br/>
-> Presentation slides (English version)
+> IndieWeb Hack Day Nürnberg 2016<br/>
+> Vortragsfolien (Deutsche Version)
 
 ___
 
-Please view these slides in landscape orientation online at [https://jkphl.is/slides/ihdnue2016](https://jkphl.is/slides/ihdnue2016).
+Vortragsfolien im Querformat auch verfügbar online an unter [https://jkphl.is/slides/wke2016](https://jkphl.is/slides/wke2016).
 
-#### Keyboard shortcuts
+#### Tastaturkürzel
 
-* `Page up`, `←`, `↑`: Previous slide
-* `Space`, `Return`, `Page down`, `→`, `↓`: Next slide
-* `Ctrl`: Toggle mouse cursor
-* `Shift`: Toggle interactive mode (stepwise display of list items)
+* `Bild Oben`, `←`, `↑`: Vorherige Folie
+* `Leerzeichen`, `Zeilenumbruch`, `Bild Oben`, `→`, `↓`: Nächste Folie
+* `Strg`: Mauszeiger ein- / ausblenden
+* `Hochstelltaste`: Interaktiven Modus aktivieren / deaktivieren (schrittweises Einblenden von Listenelementen)
