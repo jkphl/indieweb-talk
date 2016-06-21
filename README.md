@@ -7,7 +7,7 @@
 
 ___
 
-Vortragsfolien im Querformat auch verfügbar online an unter [https://jkphl.is/slides/wke2016](https://jkphl.is/slides/wke2016).
+Vortragsfolien im Querformat auch verfügbar online an unter [https://jkphl.is/slides/ihdnue2016-de](https://jkphl.is/slides/ihdnue2016-de).
 
 #### Tastaturkürzel
 
