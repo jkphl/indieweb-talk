@@ -108,8 +108,8 @@
     }
 
     //function tint(index) {
-        //var bgcolor = $slides.eq(index).css('background-color');
-        //$('body').css('background-color', bgcolor);
+    //var bgcolor = $slides.eq(index).css('background-color');
+    //$('body').css('background-color', bgcolor);
     //}
 
     function step($slide, step) {
@@ -177,5 +177,41 @@
         $('body').css('cursor', 'none');
         transition(0, current);
     });
+
+    var touches = {
+        "touchstart": {"x": -1, "y": -1},
+        "touchmove": {"x": -1, "y": -1},
+        "touchend": false
+    };
+    var touchHandler = function (event) {
+        var touch;
+        if (typeof event !== 'undefined') {
+            event.preventDefault();
+            if (typeof event.touches !== 'undefined') {
+                touch = event.touches[0];
+                switch (event.type) {
+                    case 'touchstart':
+                    case 'touchmove':
+                        touches[event.type].x = touch.pageX;
+                        touches[event.type].y = touch.pageY;
+                        break;
+                    case 'touchend':
+                        touches[event.type] = true;
+                        if (touches.touchstart.x > -1 && touches.touchmove.x > -1) {
+                            var old = current;
+                            current = (touches.touchstart.x < touches.touchmove.x) ? prev(old, CYCLE) : next(old, CYCLE);
+                            if (current !== old) {
+                                transition(old, current);
+                            }
+                        }
+                    default:
+                        break;
+                }
+            }
+        }
+    };
+    document.addEventListener('touchstart', touchHandler, false);
+    document.addEventListener('touchmove', touchHandler, false);
+    document.addEventListener('touchend', touchHandler, false);
 
 }(window, window.jQuery));
